@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PRACTICE</title>
+
+    <style>
+        /* Reset margins and padding to make sure everything is aligned properly */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ensure body takes up the full height of the viewport */
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center; 
+        }
+
+
+        p {
+            color: black;
+            font-size: 50px;
+            font-weight: 20px;
+            margin: 0;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 1s;
+            margin-bottom: 20px; 
+        }
+
+
+        .main:hover {
+            width: 335px;
+            background-color: grey;
+        }
+       table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 1px solid black;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+        td::first-letter{
+          color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="main">IPL</p>
+        <table>
+            <tr>
+                <th>PLAYER</th>
+                <th>TEAM</th>
+                <th>COUNTRY</th>
+            </tr>
+            <tr>
+                <td>VIRAT KOHLI</td>
+                <td>RCB</td>
+                <td>INDIA</td>
+            </tr>
+            <tr>
+                <td>ROHIT SHARMA</td>
+                <td>MI</td>
+                <td>INDIA</td>
+            </tr>
+            <tr>
+                <td>TILAK VARMA</td>
+                <td>MI</td>
+                <td>INDIA</td>
+            </tr>
+            <tr>
+                <td>SURESH RAINA</td>
+                <td>RETIRED</td>
+                <td>INDIA</td>
+            </tr>
+            <tr>
+                <td>KL RAHUL</td>
+                <td>LSG</td>
+                <td>INDIA</td>
+            </tr>
+            <tr>
+                <td>JASPRIT BUMRAH</td>
+                <td>MI</td>
+                <td>INDIA</td>
+            </tr>
+            <tr>
+                <td>DSP MOH. SIRAJ</td>
+                <td>GT</td>
+                <td>INDIA</td>
+            </tr>
+            <tr>
+                <td>SKY</td>
+                <td>MI</td>
+                <td>INDIA</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
