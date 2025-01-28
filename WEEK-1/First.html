@@ -1,34 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FIRST</title>
-  <style>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
 
-    .image-container {
-      width: 400px;
-      height: 300px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 1000px;
-     padding-right: 30px;
-     padding-bottom: 50px;
-      padding-left: 80px;
-      background-image: url('https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/VK.jpg');
-      background-size: cover;
-      background-position: center;
-      transition: background-image 0.3s ease-in-out;
-    }
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
-    .image-container:hover {
-      background-image: url('https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/download.jpg');
-    }
-  </style>
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
 </head>
 <body>
 
-  <div class="image-container"></div>
+<div class="gallery">
+    <img src="https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/mi.jpg" alt="MI" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+    <img src="https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/p.jpg" alt="PK" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+    <img src="https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/rcb.jpg" alt="RCB" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+    <img src="https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/s.png" alt="SRH" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
 
 </body>
 </html>
