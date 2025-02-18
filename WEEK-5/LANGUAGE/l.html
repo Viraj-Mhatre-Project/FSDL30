@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Translator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Language Translator</h1>
+    
+    <!-- Language selection for translating text -->
+    <div class="language-selector">
+      <label for="source-language">From:</label>
+      <select id="source-language">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="it">Italian</option>
+        <option value="pt">Portuguese</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+      </select>
+
+      <label for="target-language">To:</label>
+      <select id="target-language">
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="it">Italian</option>
+        <option value="pt">Portuguese</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
+    <!-- Input and Output Textareas -->
+    <textarea id="source-text" placeholder="Enter text to translate" rows="5"></textarea>
+    <button onclick="translateText()">Translate</button>
+    <textarea id="translated-text" placeholder="Translated text will appear here" rows="5" readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

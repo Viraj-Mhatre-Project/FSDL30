@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Headlines</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+  <div class="news-container">
+    <h1>Latest News Headlines</h1>
+    
+    <!-- Dropdown for selecting news category -->
+    <select id="news-category" onchange="fetchNews()">
+      <option value="general">General</option>
+      <option value="business">Business</option>
+      <option value="entertainment">Entertainment</option>
+      <option value="health">Health</option>
+      <option value="science">Science</option>
+      <option value="sports">Sports</option>
+      <option value="technology">Technology</option>
+    </select>
+
+    <!-- Display news headlines -->
+    <div id="news-headlines"></div>
+  </div>
+
+  <script src="new.js"></script>
+</body>
+</html>

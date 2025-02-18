@@ -8,9 +8,9 @@ let cart = [];
 
 // Product data with image URLs
 const products = [
-  { id: 1, name: 'Product 1', price: 10.00, image: 'https://via.placeholder.com/150' },
-  { id: 2, name: 'Product 2', price: 20.00, image: 'https://via.placeholder.com/150' },
-  { id: 3, name: 'Product 3', price: 30.00, image: 'https://via.placeholder.com/150' }
+  { id: 1, name: 'boAt', price: 2000, image: 'https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/WEEK-5/SHOPPING%20CART/h.avif' },
+  { id: 2, name: 'Sony', price: 1200, image: 'https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/WEEK-5/SHOPPING%20CART/h2.avif' },
+  { id: 3, name: 'XYZ', price: 3000, image: 'https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/WEEK-5/SHOPPING%20CART/h3.avif' }
 ];
 
 // Function to update the cart display
@@ -22,7 +22,7 @@ function updateCart() {
     const li = document.createElement('li');
     li.innerHTML = `
       <img src="${item.image}" alt="${item.name}">
-      ${item.name} - $${item.price.toFixed(2)}
+      ${item.name} - Rs${item.price.toFixed(2)}
       <button class="remove-item" data-id="${item.id}">Remove</button>
     `;
     cartItemsList.appendChild(li);
