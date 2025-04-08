@@ -13,13 +13,14 @@
     <nav>
       <ul>
         <li><a href="#" onclick="showHome()">Home</a></li>
-        <li><a href="#" onclick="showCart()">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a href="#" onclick="toggleCart()">Cart (<span id="cart-count">0</span>)</a></li>
       </ul>
     </nav>
   </header>
+  
+  <!-- Main Content -->
   <div class="container">
     <h1>Shopping Cart</h1>
-    
     <div class="products">
       <div class="product" data-id="1">
         <img src="https://raw.githubusercontent.com/Viraj-Mhatre-Project/FSDL30/refs/heads/main/WEEK-5/SHOPPING%20CART/h.avif" alt="Product 1">
@@ -40,13 +41,17 @@
         <button class="add-to-cart">Add to Cart</button>
       </div>
     </div>
+  </div>
 
-    <div class="cart">
+  <!-- Cart Sliding Section -->
+  <div class="cart-slide" id="cart-slide">
+    <div class="cart-header">
       <h2>Your Cart</h2>
-      <ul class="cart-items"></ul>
-      <p>Total: Rs<span id="total-price">0.00</span></p>
-      <button class="clear-cart">Clear Cart</button>
+      <button class="close-cart" onclick="toggleCart()">X</button>
     </div>
+    <ul class="cart-items"></ul>
+    <p>Total: Rs <span id="total-price">0.00</span></p>
+    <button class="clear-cart">Clear Cart</button>
   </div>
 
   <script src="cart.js"></script>

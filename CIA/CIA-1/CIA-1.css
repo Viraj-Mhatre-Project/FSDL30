@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 15px; /* Some padding */
+    text-align: center; /* Centered text */
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+main {
+    padding: 20px; /* Padding for the main content */
+}
+
+section {
+    margin: 20px 0; /* Margin between sections */
+    padding: 20px; /* Padding inside sections */
+    background-color: #f4f4f4; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+}
